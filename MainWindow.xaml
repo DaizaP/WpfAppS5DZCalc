@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfAppS5DZCalc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppS5DZCalc"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.499,0.512">
+        <Grid>
+            <Button x:Name="ButtonAdd" FontSize ="20" Content="Плюс" HorizontalAlignment="Left" Margin="10,172,0,0" VerticalAlignment="Top" Click="Button_Click" Height="58" Width="100"/>
+            <Button x:Name="ButtonSub" FontSize ="20" Content="Минус" HorizontalAlignment="Left" Margin="325,172,0,0" VerticalAlignment="Top" Click="Button_Click" Height="58" Width="100"/>
+            <Button x:Name="ButtonMult" FontSize ="20" Content="Умножить" HorizontalAlignment="Left" Margin="115,172,0,0" VerticalAlignment="Top" Click="Button_Click" Height="58" Width="100"/>
+            <Button x:Name="ButtonDiv" FontSize ="20" Content="Разделить" HorizontalAlignment="Left" Margin="220,172,0,0" VerticalAlignment="Top" Click="Button_Click" Height="58" Width="100"/>
+        </Grid>
+        <TextBox x:Name="TextBoxInputText" FontSize ="50" HorizontalAlignment="Left" Margin="10,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" RenderTransformOrigin="0.5,0.5" Height="99" TextChanged="TextBoxInputText_TextChanged"/>
+        <Label x:Name="LabelOutAnswer" FontSize ="50" Content="" HorizontalAlignment="Left" Margin="300,33,0,0" VerticalAlignment="Top" Height="99" Width="305" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+    </Grid>
+</Window>
