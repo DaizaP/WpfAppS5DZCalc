@@ -58,5 +58,14 @@ namespace WpfAppS5DZCalc
                 Calculation();
             }
         }
+        public void Clear()
+        {
+            if (results.Count > 0)
+            {
+                result = 0;
+                results.Clear();
+                Calculation();
+            }
+        }
     }
 }
