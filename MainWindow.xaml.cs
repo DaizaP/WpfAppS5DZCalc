@@ -42,6 +42,8 @@ namespace WpfAppS5DZCalc
                     calculator.Mult(value); break;
                 case "ButtonDiv":
                     calculator.Div(value); break;
+                case "ButtonCancel":
+                    calculator.Cancel(); break;
                 default:
                     MessageBox.Show("Ошибка нажатия");
                     TextBoxInputText.Clear();
